@@ -7,7 +7,7 @@ source:
     git_tag: 4.5.5
 
 build:
-    number: 0
+    number: 1
     skip: True  # [win]
 
 requirements:
@@ -19,15 +19,16 @@ requirements:
         - hdf5
         - libnetcdf
         - udunits2
-        - gcc
         - krb5
+        - expat
     run:
         - gsl
         - hdf5
         - libnetcdf
         - udunits2
-        - libgcc
         - krb5
+        - expat
+        - libgcc
 
 test:
     commands:
