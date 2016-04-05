@@ -7,7 +7,7 @@ source:
     git_tag: 4.5.5
 
 build:
-    number: 1
+    number: 2
     skip: True  # [win]
 
 requirements:
@@ -16,19 +16,19 @@ requirements:
         - antlr
         - curl
         - zlib
-        - hdf5
+        - hdf5 1.8.15.1
         - libnetcdf
         - udunits2
-        - krb5
         - expat
+        - krb5
     run:
         - gsl
-        - hdf5
+        - hdf5 1.8.15.1
         - libnetcdf
         - udunits2
-        - krb5
         - expat
         - libgcc
+        - krb5
 
 test:
     commands:
@@ -36,6 +36,7 @@ test:
         - ncks -M http://test.opendap.org:80/opendap/data/ncml/sample_virtual_dataset.ncml
         - ncks -F --dimension samples,1 http://test.opendap.org:80/opendap/data/ncml/sample_virtual_dataset.ncml
         - ncap2 --help
+        - conda inspect linkages -n _test nco  # [linux]
 
 about:
     home: http://nco.sourceforge.net/
