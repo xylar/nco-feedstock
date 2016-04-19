@@ -7,7 +7,7 @@ source:
     git_tag: 4.5.5
 
 build:
-    number: 3
+    number: 4
     skip: True  # [win]
 
 requirements:
@@ -15,17 +15,17 @@ requirements:
         - gsl
         - antlr
         - curl
-        - zlib
-        - hdf5 1.8.15.1
-        - libnetcdf
+        - zlib 1.2*
+        - hdf5 1.8.15*
+        - libnetcdf 4.3*
         - udunits2
         - expat
         - krb5
         - texinfo
     run:
         - gsl
-        - hdf5 1.8.15.1
-        - libnetcdf
+        - hdf5 1.8.15*
+        - libnetcdf 4.3*
         - udunits2
         - expat
         - libgcc
