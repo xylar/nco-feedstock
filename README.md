@@ -5,7 +5,7 @@ Home: http://nco.sourceforge.net/
 
 Package license: GPL-3.0
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Suite of programs for manipulating NetCDF/HDF4 files
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/nco-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/nco-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/nco-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/nco-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/nco-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/nco-feedstock/branch/master)
