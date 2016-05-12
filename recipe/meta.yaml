@@ -1,13 +1,15 @@
+{% set version = "4.6.0" %}
 package:
     name: nco
-    version: 4.5.5
+    version: {{ version }}
 
 source:
-    git_url: https://github.com/nco/nco.git
-    git_tag: 4.5.5
+    fn: nco-{{ version }}.tar.gz
+    url: https://github.com/nco/nco/archive/{{ version }}.tar.gz
+    sha256: 2ebeec6456255d363e9f5ef92d45cd809c058495d2c3920de3eacda5098986a9
 
 build:
-    number: 4
+    number: 0
     skip: True  # [win]
 
 requirements:
