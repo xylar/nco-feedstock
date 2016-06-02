@@ -17,17 +17,17 @@ requirements:
         - gsl
         - antlr
         - curl
-        - zlib 1.2*
-        - hdf5 1.8.17*
-        - libnetcdf 4.4*
+        - zlib 1.2.*
+        - hdf5 1.8.17|1.8.17.*
+        - libnetcdf 4.4.*
         - udunits2
         - expat
         - krb5
         - texinfo
     run:
         - gsl
-        - hdf5 1.8.17*
-        - libnetcdf 4.4*
+        - hdf5 1.8.17|1.8.17.*
+        - libnetcdf 4.4.*
         - udunits2
         - expat
         - libgcc
