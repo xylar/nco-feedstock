@@ -9,7 +9,7 @@ source:
     sha256: 2ebeec6456255d363e9f5ef92d45cd809c058495d2c3920de3eacda5098986a9
 
 build:
-    number: 1
+    number: 2
     skip: True  # [win]
 
 requirements:
@@ -31,7 +31,7 @@ requirements:
         - udunits2
         - expat
         - libgcc
-        - krb5
+        - esmf
 
 test:
     commands:
