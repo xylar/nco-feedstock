@@ -24,6 +24,9 @@ requirements:
         - expat
         - krb5
         - texinfo
+        - bison
+        - flex
+        - m4
     run:
         - gsl
         - hdf5 1.8.17|1.8.17.*
@@ -36,8 +39,6 @@ requirements:
 test:
     commands:
         - ncks --help
-        - ncks -M http://test.opendap.org:80/opendap/data/ncml/sample_virtual_dataset.ncml
-        - ncks -F --dimension samples,1 http://test.opendap.org:80/opendap/data/ncml/sample_virtual_dataset.ncml
         - ncap2 --help
         - conda inspect linkages -n _test nco  # [linux]
 
