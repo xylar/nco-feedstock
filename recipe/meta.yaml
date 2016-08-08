@@ -40,7 +40,7 @@ test:
     commands:
         - ncks --help
         - ncap2 --help
-        - conda inspect linkages -n _test nco  # [linux]
+        - conda inspect linkages -n _test nco  # [not win]
         - conda inspect objects -n _test nco  # [osx]
 
 about:
