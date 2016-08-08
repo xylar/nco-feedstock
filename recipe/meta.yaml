@@ -1,4 +1,4 @@
-{% set version = "4.6.0" %}
+{% set version = "4.6.1" %}
 package:
     name: nco
     version: {{ version }}
@@ -6,10 +6,10 @@ package:
 source:
     fn: nco-{{ version }}.tar.gz
     url: https://github.com/nco/nco/archive/{{ version }}.tar.gz
-    sha256: 2ebeec6456255d363e9f5ef92d45cd809c058495d2c3920de3eacda5098986a9
+    sha256: 7433fe5901f48eb5170f24c6d53b484161e1c63884d9350600070573baf8b8b0
 
 build:
-    number: 3
+    number: 0
     skip: True  # [win]
 
 requirements:
@@ -41,6 +41,7 @@ test:
         - ncks --help
         - ncap2 --help
         - conda inspect linkages -n _test nco  # [linux]
+        - conda inspect objects -n _test nco  # [osx]
 
 about:
     home: http://nco.sourceforge.net/
