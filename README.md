@@ -7,7 +7,7 @@ Package license: GPL-3.0
 
 Feedstock license: BSD 3-Clause
 
-Summary: Suite of programs for manipulating NetCDF/HDF4 files
+Summary: Suite of programs for manipulating NetCDF/HDF4 files.
 
 
 
@@ -31,7 +31,6 @@ It is possible to list all of the versions of `nco` available on your platform w
 ```
 conda search nco --channel conda-forge
 ```
-
 
 
 About conda-forge
