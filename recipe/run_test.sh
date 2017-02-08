@@ -4,7 +4,7 @@ URL="http://tds.marine.rutgers.edu/thredds/dodsC/roms/espresso/2013_da/his/ESPRE
 
 ncks -M $URL
 
-fin=$SRC_DIR/data/in.nc
+fin=data/in.nc
 
 ncks -O --rgr skl=skl_t42.nc --rgr grid=grd_t42.nc --rgr latlon=64,128 --rgr lat_typ=gss --rgr lon_typ=Grn_ctr $fin foo.nc
 ncks -O --rgr grid=grd_2x2.nc --rgr latlon=90,180 --rgr lat_typ=eqa --rgr lon_typ=Grn_wst $fin foo.nc
