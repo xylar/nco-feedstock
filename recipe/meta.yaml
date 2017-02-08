@@ -38,6 +38,8 @@ requirements:
     - esmf
 
 test:
+  source_files:
+    - data/in.nc
   commands:
     - ncks --help
     - ncap2 --help
