@@ -10,7 +10,7 @@ source:
   sha256: 079d83f800b73d9b12b8de1634a88c2cbe40a639aaf7bc056cd2e836c6047697
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win]
 
 requirements:
@@ -36,6 +36,7 @@ requirements:
     - expat
     - libgcc
     - esmf
+    - openblas
 
 test:
   source_files:
