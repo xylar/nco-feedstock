@@ -7,7 +7,7 @@ package:
 source:
   fn: nco-{{ version }}.tar.gz
   url: https://github.com/nco/nco/archive/{{ version }}.tar.gz
-  sha256: 6b9297093e38e29a7b44f263f67aa0e728052d947338bbb1f6fc2a4cc4b910c6
+  sha256: 079d83f800b73d9b12b8de1634a88c2cbe40a639aaf7bc056cd2e836c6047697
 
 build:
   number: 0
