@@ -10,7 +10,7 @@ source:
   sha256: 2fe2dabf14a60bface694307cbe719df57103682b715348e9d77bfe8d31487f3
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win]
 
 requirements:
@@ -19,7 +19,7 @@ requirements:
     - antlr
     - curl
     - zlib 1.2.*
-    - hdf5 1.8.17|1.8.17.*
+    - hdf5 1.8.18|1.8.18.*
     - libnetcdf 4.4.*
     - udunits2
     - expat
@@ -30,7 +30,7 @@ requirements:
     - m4
   run:
     - gsl
-    - hdf5 1.8.17|1.8.17.*
+    - hdf5 1.8.18|1.8.18.*
     - libnetcdf 4.4.*
     - udunits2
     - expat
