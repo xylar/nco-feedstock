@@ -1,4 +1,4 @@
-{% set version = "4.6.7" %}
+{% set version = "4.6.8" %}
 
 package:
   name: nco
@@ -7,10 +7,10 @@ package:
 source:
   fn: nco-{{ version }}.tar.gz
   url: https://github.com/nco/nco/archive/{{ version }}.tar.gz
-  sha256: 2fe2dabf14a60bface694307cbe719df57103682b715348e9d77bfe8d31487f3
+  sha256: d818a9e4026d5cc5b4372a212ef3385449a757ee00b807ae9b91741bc79a545b
 
 build:
-  number: 2
+  number: 0
   skip: True  # [win]
 
 requirements:
@@ -26,7 +26,7 @@ requirements:
     - krb5 1.14.*
     - texinfo
     - bison
-    - flex 2.6.0
+    - flex 2.6.3
     - m4
   run:
     - gsl
@@ -36,7 +36,7 @@ requirements:
     - expat
     - libgcc
     - esmf
-    - openblas 0.2.19|0.2.19.*
+    - openblas 0.2.20|0.2.20.*
 
 test:
   source_files:
