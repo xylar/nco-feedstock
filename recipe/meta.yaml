@@ -1,4 +1,4 @@
-{% set version = "4.6.8" %}
+{% set version = "4.6.9" %}
 
 package:
   name: nco
@@ -7,7 +7,7 @@ package:
 source:
   fn: nco-{{ version }}.tar.gz
   url: https://github.com/nco/nco/archive/{{ version }}.tar.gz
-  sha256: d818a9e4026d5cc5b4372a212ef3385449a757ee00b807ae9b91741bc79a545b
+  sha256: efdc0d65d3cc67d0d5dc521709dd0e60b24839e0ae7ded92aaec656890f6f416
 
 build:
   number: 0
@@ -56,3 +56,4 @@ extra:
   recipe-maintainers:
     - ocefpaf
     - kwilcox
+    - xylar
