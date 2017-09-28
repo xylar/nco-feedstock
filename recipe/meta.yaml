@@ -5,17 +5,16 @@ package:
   version: {{ version }}
 
 source:
-  fn: nco-{{ version }}.tar.gz
   url: https://github.com/nco/nco/archive/{{ version }}.tar.gz
   sha256: efdc0d65d3cc67d0d5dc521709dd0e60b24839e0ae7ded92aaec656890f6f416
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win]
 
 requirements:
   build:
-    - gsl
+    - gsl >=2.2,<2.3
     - antlr
     - curl
     - zlib 1.2.*
@@ -29,7 +28,7 @@ requirements:
     - flex
     - m4
   run:
-    - gsl
+    - gsl >=2.2,<2.3
     - hdf5 1.8.18|1.8.18.*
     - libnetcdf 4.4.*
     - udunits2
