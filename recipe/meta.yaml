@@ -9,19 +9,19 @@ source:
   sha256: efdc0d65d3cc67d0d5dc521709dd0e60b24839e0ae7ded92aaec656890f6f416
 
 build:
-  number: 1
+  number: 2
   skip: True  # [win]
 
 requirements:
   build:
     - gsl >=2.2,<2.3
     - antlr
-    - curl
-    - zlib 1.2.*
+    - curl >=7.44.0,<8
+    - zlib 1.2.11
     - hdf5 1.8.18|1.8.18.*
     - libnetcdf 4.4.*
     - udunits2
-    - expat
+    - expat 2.1.*
     - krb5 1.14.*
     - texinfo
     - bison
@@ -32,7 +32,7 @@ requirements:
     - hdf5 1.8.18|1.8.18.*
     - libnetcdf 4.4.*
     - udunits2
-    - expat
+    - expat 2.1.*
     - libgcc
     - esmf
     - openblas 0.2.19|0.2.19.*
@@ -43,8 +43,8 @@ test:
   commands:
     - ncks --help
     - ncap2 --help
-    - conda inspect linkages -p $PREFIX nco  # [not win]
-    - conda inspect objects -p $PREFIX nco  # [osx]
+    - conda inspect linkages -p $PREFIX $PKG_NAME  # [not win]
+    - conda inspect objects -p $PREFIX $PKG_NAME  # [osx]
 
 about:
   home: http://nco.sourceforge.net/
