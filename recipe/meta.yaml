@@ -9,7 +9,7 @@ source:
   sha256: 5ba930f00a0e9775f85748d145acecfe142f917c180de538b2f8994788446cf8
 
 build:
-  number: 3
+  number: 4
   skip: True  # [win]
 
 requirements:
@@ -21,7 +21,7 @@ requirements:
     - hdf5 1.10.1
     - libnetcdf 4.4.*
     - udunits2
-    - expat 2.1.*
+    - expat 2.2.*
     - krb5 1.14.*
     - texinfo
     - bison
@@ -32,7 +32,7 @@ requirements:
     - hdf5 1.10.1
     - libnetcdf 4.4.*
     - udunits2
-    - expat 2.1.*
+    - expat 2.2.*
     - libgcc
     - esmf
     - openblas 0.2.20|0.2.20*
