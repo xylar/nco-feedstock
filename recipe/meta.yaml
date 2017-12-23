@@ -1,18 +1,15 @@
-{% set version = "4.7.0" %}
+{% set version = "4.7.1" %}
 
 package:
   name: nco
   version: {{ version }}
 
 source:
-  # url: https://github.com/nco/nco/archive/{{ version }}.tar.gz
-  # sha256: 5ba930f00a0e9775f85748d145acecfe142f917c180de538b2f8994788446cf8
-  # Just testing before we have a new release.
-  git_url: https://github.com/nco/nco.git
-  git_branch: master
+  url: https://github.com/nco/nco/archive/{{ version }}.tar.gz
+  sha256: 3e350658117e12f0f102de0c3d1ad1756b7ebf7f43821f3d2044b4659633938b
 
 build:
-  number: 4
+  number: 0
   skip: True  # [win32 or (win and py<=35)]
   features:
     - vc14  # [win and (py35 or py36)]
