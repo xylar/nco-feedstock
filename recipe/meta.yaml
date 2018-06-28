@@ -9,7 +9,7 @@ source:
   sha256: 36f2132482a2eb9910ff9f760f0e61168aee874ad473a187cd8e5f7db2d2e617
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win32 or (win and py<=35)]
   features:
     - vc14  # [win and (py35 or py36)]
@@ -28,7 +28,7 @@ requirements:
     - gsl >=2.2,<2.3
     - hdf5 1.10.1
     - krb5 1.14.*  # [not win]
-    - libnetcdf 4.5.*
+    - libnetcdf 4.6.*
     - udunits2
     - zlib 1.2.11
     - vc 14  # [win and (py35 or py36)]
@@ -38,7 +38,7 @@ requirements:
     - gsl >=2.2,<2.3
     - hdf5 1.10.1
     - krb5 1.14.*  # [not win]
-    - libnetcdf >=4.5
+    - libnetcdf >=4.6
     - udunits2
     - libgcc  # [not win]
     - openblas 0.2.20|0.2.20*  # [not win]
