@@ -14,14 +14,15 @@ Summary: Suite of programs for manipulating NetCDF/HDF4 files.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/nco-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/nco-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/nco-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/nco-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/nco-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/nco-feedstock/branch/master)
+[![Linux,OSX](https://img.shields.io/circleci/project/github/conda-forge/nco-feedstock/master.svg?label=Linux,OSX)](https://circleci.com/gh/conda-forge/nco-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/nco-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/nco-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/nco/badges/version.svg)](https://anaconda.org/conda-forge/nco)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/nco/badges/downloads.svg)](https://anaconda.org/conda-forge/nco)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-nco-green.svg)](https://anaconda.org/conda-forge/nco) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/nco.svg)](https://anaconda.org/conda-forge/nco) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/nco.svg)](https://anaconda.org/conda-forge/nco) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/nco.svg)](https://anaconda.org/conda-forge/nco) |
 
 Installing nco
 ==============
