@@ -14,8 +14,7 @@ Summary: Suite of programs for manipulating NetCDF/HDF4 files.
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/nco-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/nco-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/nco-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/nco-feedstock)
+[![Linux,OSX](https://img.shields.io/circleci/project/github/conda-forge/nco-feedstock/master.svg?label=Linux,OSX)](https://circleci.com/gh/conda-forge/nco-feedstock)
 [![Windows](https://img.shields.io/appveyor/ci/conda-forge/nco-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/nco-feedstock/branch/master)
 
 Current release info
