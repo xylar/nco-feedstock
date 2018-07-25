@@ -9,7 +9,7 @@ source:
   sha256: 36f2132482a2eb9910ff9f760f0e61168aee874ad473a187cd8e5f7db2d2e617
 
 build:
-  number: 2
+  number: 3
   skip: True  # [win and vc<14]
 
 requirements:
@@ -29,17 +29,19 @@ requirements:
     - hdf5
     - krb5  # [not win]
     - libnetcdf
+    - openblas
     - udunits2
     - zlib
   run:
     - curl
+    - esmf  # [not win]
     - expat
     - gsl
     - hdf5
     - krb5  # [not win]
     - libnetcdf
+    - openblas
     - udunits2
-    - esmf  # [not win]
 
 test:
   source_files:
