@@ -26,6 +26,6 @@ ncks -O --rgr grid=grd_2x2.nc \
 ncap2 -O -s 'tst[lat,lon]=1.0f' skl_t42.nc dat_t42.nc
 
 ncremap -a conserve -s grd_t42.nc -g grd_2x2.nc -m map_t42_to_2x2.nc
-ncremap -i dat_t42.nc -m map_t42_to_2x2.nc -o dat_2x2.nc
+# ncremap -i dat_t42.nc -m map_t42_to_2x2.nc -o dat_2x2.nc
 # ncwa -O dat_2x2.nc dat_avg.nc
 # ncks -C -H -v tst dat_avg.nc
