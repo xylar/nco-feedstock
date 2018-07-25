@@ -24,9 +24,9 @@ ncks -O --rgr grid=grd_2x2.nc \
 
 
 ncap2 -O -s 'tst[lat,lon]=1.0f' skl_t42.nc dat_t42.nc
-if [[ $(uname) == Darwin ]]; then
-  ncremap -a conserve -s grd_t42.nc -g grd_2x2.nc -m map_t42_to_2x2.nc  # FIXME: This call for reason prevent CircleCI from uploading the package!
-  ncremap -i dat_t42.nc -m map_t42_to_2x2.nc -o dat_2x2.nc
-  ncwa -O dat_2x2.nc dat_avg.nc
-  ncks -C -H -v tst dat_avg.nc
-fi
+# if [[ $(uname) == Darwin ]]; then
+#   ncremap -a conserve -s grd_t42.nc -g grd_2x2.nc -m map_t42_to_2x2.nc  # FIXME: This call for reason prevent CircleCI from uploading the package!
+#   ncremap -i dat_t42.nc -m map_t42_to_2x2.nc -o dat_2x2.nc
+#   ncwa -O dat_2x2.nc dat_avg.nc
+#   ncks -C -H -v tst dat_avg.nc
+# fi

@@ -47,7 +47,7 @@ test:
   commands:
     - ncks --help
     - ncap2 --help
-    - ncks -M "http://tds.marine.rutgers.edu/thredds/dodsC/roms/espresso/2013_da/his/ESPRESSO_Real-Time_v2_History_Best"  # [not osx]
+    - ncks -M "http://tds.marine.rutgers.edu/thredds/dodsC/roms/espresso/2013_da/his/ESPRESSO_Real-Time_v2_History_Best"
 
 about:
   home: http://nco.sourceforge.net/
