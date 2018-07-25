@@ -24,6 +24,10 @@ ncks -O --rgr grid=grd_2x2.nc \
 
 
 ncap2 -O -s 'tst[lat,lon]=1.0f' skl_t42.nc dat_t42.nc
+
+# This test is hanging on OS X and we don't execute it on Linux due to an odd
+# issue with CircleCI not uploading the binary after the test is executed.
+
 # if [[ $(uname) == Darwin ]]; then
 #   ncremap -a conserve -s grd_t42.nc -g grd_2x2.nc -m map_t42_to_2x2.nc  # FIXME: This call for reason prevent CircleCI from uploading the package!
 #   ncremap -i dat_t42.nc -m map_t42_to_2x2.nc -o dat_2x2.nc
