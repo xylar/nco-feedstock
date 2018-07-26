@@ -14,6 +14,8 @@ krb5:
 - '1.14'
 libnetcdf:
 - '4.6'
+openblas:
+- 0.2.20
 pin_run_as_build:
   curl:
     max_pin: x
@@ -27,6 +29,8 @@ pin_run_as_build:
     max_pin: x.x
   libnetcdf:
     max_pin: x.x
+  openblas:
+    max_pin: x.x.x
   zlib:
     max_pin: x.x
 zlib:
