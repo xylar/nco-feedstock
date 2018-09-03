@@ -24,3 +24,6 @@ export NETCDF_ROOT=$PREFIX
 make
 eval ${LIBRARY_SEARCH_VAR}=$PREFIX/lib make check
 make install
+
+# We can remove this when we start using the new conda-build.
+find $PREFIX -name '*.la' -delete
