@@ -28,7 +28,8 @@ requirements:
     - gsl
     - hdf5
     - krb5  # [not win]
-    - libnetcdf
+    - libnetcdf  # [not win]
+    - libnetcdf 4.6.1  # [win]
     - openblas
     - udunits2
     - zlib
@@ -39,7 +40,8 @@ requirements:
     - gsl
     - hdf5
     - krb5  # [not win]
-    - libnetcdf
+    - libnetcdf  # [not win]
+    - libnetcdf 4.6.1  # [win]
     - openblas
     - udunits2
 
