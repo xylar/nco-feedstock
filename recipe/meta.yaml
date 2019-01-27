@@ -9,7 +9,7 @@ source:
   sha256: d0accd00208389aa6be3f236c514823fd4ae91c5f9eba32b86e21da83d5316f8
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win and vc<14]
 
 requirements:
@@ -28,7 +28,8 @@ requirements:
     - gsl
     - hdf5
     - krb5  # [not win]
-    - libnetcdf
+    - libnetcdf  # [not win]
+    - libnetcdf 4.6.1  # [win]
     - openblas
     - udunits2
     - zlib
@@ -39,7 +40,8 @@ requirements:
     - gsl
     - hdf5
     - krb5  # [not win]
-    - libnetcdf
+    - libnetcdf  # [not win]
+    - libnetcdf 4.6.1  # [win]
     - openblas
     - udunits2
 
