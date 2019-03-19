@@ -2,14 +2,18 @@ MACOSX_DEPLOYMENT_TARGET:
 - '10.9'
 c_compiler:
 - clang
+c_compiler_version:
+- '4'
 channel_sources:
 - conda-forge,defaults
 channel_targets:
 - conda-forge main
 curl:
-- '7.59'
+- '7.64'
 cxx_compiler:
 - clangxx
+cxx_compiler_version:
+- '4'
 expat:
 - '2.2'
 gsl:
@@ -18,14 +22,16 @@ hdf5:
 - 1.10.4
 krb5:
 - '1.16'
+libblas:
+- 3.8 *netlib
+libcblas:
+- 3.8 *netlib
 libnetcdf:
-- '4.6'
+- 4.6.2
 macos_machine:
 - x86_64-apple-darwin13.4.0
 macos_min_version:
 - '10.9'
-openblas:
-- 0.3.3
 pin_run_as_build:
   curl:
     max_pin: x
@@ -36,8 +42,6 @@ pin_run_as_build:
   krb5:
     max_pin: x.x
   libnetcdf:
-    max_pin: x.x
-  openblas:
     max_pin: x.x.x
   zlib:
     max_pin: x.x
