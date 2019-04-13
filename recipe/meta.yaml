@@ -9,7 +9,7 @@ source:
   sha256: 048f6298bceb40913c3ae433f875dea1e9129b1c86019128e7271d08f274a879
 
 build:
-  number: 1
+  number: 2
   skip: True  # [win and vc<14]
 
 requirements:
@@ -44,6 +44,7 @@ requirements:
     - libnetcdf  # [not win]
     - libnetcdf 4.6.1  # [win]
     - udunits2
+    - tempest-remap  # [not win]
 
 test:
   source_files:
