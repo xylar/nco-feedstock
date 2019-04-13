@@ -21,6 +21,7 @@ ncks -O --rgr grid=grd_2x2.nc \
         --rgr latlon=90,180 \
         --rgr lat_typ=eqa \
         --rgr lon_typ=Grn_wst \
+        -D 3 \
         $fin \
         foo.nc
 
