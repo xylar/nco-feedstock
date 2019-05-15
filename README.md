@@ -16,13 +16,6 @@ Current build status
 
 
 <table><tr>
-    <td>CircleCI</td>
-    <td>
-      <a href="https://circleci.com/gh/conda-forge/nco-feedstock">
-        <img alt="OSX" src="https://img.shields.io/circleci/project/github/conda-forge/nco-feedstock/master.svg?label=OSX">
-      </a>
-    </td>
-  </tr><tr>
     <td>Appveyor</td>
     <td>
       <a href="https://ci.appveyor.com/project/conda-forge/nco-feedstock/branch/master">
@@ -69,6 +62,7 @@ Current build status
       </details>
     </td>
   </tr>
+![ppc64le disabled](https://img.shields.io/badge/ppc64le-disabled-lightgrey.svg)
 </table>
 
 Current release info
