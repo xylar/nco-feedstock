@@ -9,7 +9,7 @@ source:
   sha256: ddae3fed46c266798ed1176d6a70b36376d2d320fa933c716a623172d1e13c68
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win and vc<14]
 
 requirements:
@@ -57,7 +57,8 @@ test:
 about:
   home: http://nco.sourceforge.net/
   license: GPL-3.0
-  summary: 'Suite of programs for manipulating NetCDF/HDF4 files.'
+  license_file: COPYING
+  summary: 'Suite of programs for manipulating NetCDF/HDF4 files'
 
 extra:
   recipe-maintainers:
