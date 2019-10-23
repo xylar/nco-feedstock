@@ -7,7 +7,7 @@ Package license: GPL-3.0
 
 Feedstock license: BSD 3-Clause
 
-Summary: Suite of programs for manipulating NetCDF/HDF4 files.
+Summary: Suite of programs for manipulating NetCDF/HDF4 files
 
 
 
