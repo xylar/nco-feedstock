@@ -15,6 +15,3 @@ export NETCDF_ROOT=$PREFIX
 make -j$CPU_COUNT
 make check
 make install
-
-# We can remove this when we start using the new conda-build.
-find $PREFIX -name '*.la' -delete

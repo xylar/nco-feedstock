@@ -1,4 +1,13 @@
 {% set version = "4.8.1" %}
+{% set build = 2 %}
+
+# ensure mpi is defined (needed for conda-smithy recipe-lint)
+{% set mpi = mpi or 'nompi' %}
+
+{% if mpi == 'mpich' %}
+# prioritize mpich variant, which was previously the only option, via build number
+{% set build = build + 100 %}
+{% endif %}
 
 package:
   name: nco
@@ -9,8 +18,21 @@ source:
   sha256: ddae3fed46c266798ed1176d6a70b36376d2d320fa933c716a623172d1e13c68
 
 build:
-  number: 1
-  skip: True  # [win and vc<14]
+  number: {{ build }}
+  skip: True  # [(win and vc<14) or (win and (mpi != 'nompi')) ]
+
+  # add build string so packages can depend on
+  # mpi or nompi variants explicitly:
+  # `nco * mpi_mpich_*` for mpich
+  # `nco * mpi_*` for any mpi
+  # `nco * nompi_*` for no mpi
+
+  {% if mpi != 'nompi' %}
+  {% set mpi_prefix = "mpi_" + mpi %}
+  {% else %}
+  {% set mpi_prefix = "nompi" %}
+  {% endif %}
+  string: "{{ mpi_prefix }}_h{{ PKG_HASH }}_{{ build }}"
 
 requirements:
   build:
@@ -29,22 +51,26 @@ requirements:
     - expat
     - gsl
     - hdf5
+    - hdf5  * {{ mpi_prefix }}_*  # [not win]
     - krb5  # [not win]
     - libnetcdf  # [not win]
+    - libnetcdf  * {{ mpi_prefix }}_*  # [not win]
     - libnetcdf 4.6.1  # [win]
     - udunits2
     - zlib
+    - {{ mpi }}  # [mpi != 'nompi']
   run:
     - curl
-    - esmf  # [not win]
+    - esmf * {{ mpi_prefix }}_*  # [not win]
     - expat
     - gsl
     - hdf5
     - krb5  # [not win]
-    - libnetcdf  # [not win]
+    - libnetcdf * {{ mpi_prefix }}_*  # [not win]
     - libnetcdf 4.6.1  # [win]
     - udunits2
     - tempest-remap  # [not win]
+    - {{ mpi }}  # [mpi != 'nompi']
 
 test:
   source_files:
