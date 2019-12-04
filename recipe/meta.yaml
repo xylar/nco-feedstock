@@ -50,14 +50,16 @@ requirements:
     - curl
     - expat
     - gsl
-    - hdf5
-    - hdf5  * {{ mpi_prefix }}_*  # [not win]
     - krb5  # [not win]
-    - libnetcdf
-    - libnetcdf  * {{ mpi_prefix }}_*
     - udunits2
     - zlib
     - {{ mpi }}  # [mpi != 'nompi']
+    # need to list these twice to get version pinning from conda_build_config
+    # and build pinning from {{ mpi_prefix }}
+    - hdf5
+    - hdf5  * {{ mpi_prefix }}_*
+    - libnetcdf
+    - libnetcdf  * {{ mpi_prefix }}_*
   run:
     - curl
     - esmf * {{ mpi_prefix }}_*  # [not win]
@@ -65,7 +67,7 @@ requirements:
     - gsl
     - hdf5
     - krb5  # [not win]
-    - libnetcdf * {{ mpi_prefix }}_*
+    - libnetcdf
     - udunits2
     - tempest-remap  # [not win]
     - {{ mpi }}  # [mpi != 'nompi']
