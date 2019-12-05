@@ -69,7 +69,7 @@ requirements:
     - krb5  # [not win]
     - libnetcdf
     - udunits2
-    - tempest-remap  # [not win]
+    - tempest-remap * {{ mpi_prefix }}_*  # [not win]
     - {{ mpi }}  # [mpi != 'nompi']
 
 test:
