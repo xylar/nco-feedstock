@@ -85,7 +85,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: COPYING
-  summary: 'Suite of programs for manipulating NetCDF/HDF4 files'
+  summary: Suite of programs for manipulating NetCDF/HDF4 files
 
 extra:
   recipe-maintainers:
