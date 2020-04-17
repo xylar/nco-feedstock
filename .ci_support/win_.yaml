@@ -1,13 +1,13 @@
 c_compiler:
-- vs2015
+- vs2017
 channel_sources:
 - conda-forge,defaults
 channel_targets:
 - conda-forge main
 curl:
-- '7.64'
+- '7'
 cxx_compiler:
-- vs2015
+- vs2017
 expat:
 - '2.2'
 gsl:
@@ -27,8 +27,6 @@ pin_run_as_build:
     max_pin: x
   expat:
     max_pin: x.x
-  vc:
-    max_pin: x
   zlib:
     max_pin: x.x
 vc:

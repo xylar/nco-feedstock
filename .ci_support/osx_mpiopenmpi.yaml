@@ -9,7 +9,7 @@ channel_sources:
 channel_targets:
 - conda-forge main
 curl:
-- '7.64'
+- '7'
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
@@ -21,7 +21,7 @@ gsl:
 hdf5:
 - 1.10.5
 krb5:
-- '1.16'
+- 1.17.1
 libblas:
 - 3.8 *netlib
 libcblas:
