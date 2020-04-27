@@ -11,7 +11,7 @@ source:
 
 build:
   number: {{ build }}
-  skip: True  # [(win and vc<14) or (win and (mpi != 'nompi')) ]
+  skip: True  # [win and vc<14]
 
 requirements:
   build:
