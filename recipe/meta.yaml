@@ -1,5 +1,5 @@
-{% set version = "4.9.2" %}
-{% set build = 104 %}
+{% set version = "4.9.3" %}
+{% set build = 0 %}
 
 package:
   name: nco
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/nco/nco/archive/{{ version }}.tar.gz
-  sha256: 1a98c37c946c00232fa7319d00d1d80f77603adda7c9239d10d68a8a3545a4d5
+  sha256: eade5b79f3814b11ae3f52c34159567e76a73f05f0ab141eccaac68f0ca94aee
 
 build:
   number: {{ build }}
-  skip: True  # [win and vc<14]
+  skip: true  # [win and vc<14]
 
 requirements:
   build:
