@@ -5,11 +5,9 @@ Home: http://nco.sourceforge.net/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nco-feedstock/blob/master/LICENSE.txt)
 
 Summary: Suite of programs for manipulating NetCDF/HDF4 files
-
-
 
 Current build status
 ====================
