@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ $(uname) == Darwin ]]; then
-  ARGS="--disable-openmp --disable-regex --disable-shared --disable-doc"
+  ARGS="--enable-openmp --enable-regex --disable-shared --disable-doc"
 elif [[ $(uname) == Linux ]]; then
   ARGS="--enable-openmp --disable-dependency-tracking"
 fi
