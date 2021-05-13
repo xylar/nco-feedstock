@@ -3,13 +3,13 @@ c_compiler:
 channel_sources:
 - conda-forge,defaults
 channel_targets:
-- conda-forge main
+- conda-forge nco_dev
 curl:
 - '7'
 cxx_compiler:
 - vs2017
 expat:
-- '2.3'
+- '2'
 gsl:
 - '2.6'
 hdf5:
@@ -19,12 +19,10 @@ libblas:
 libcblas:
 - 3.8 *netlib
 libnetcdf:
-- 4.7.4
+- 4.8.0
 pin_run_as_build:
   curl:
     max_pin: x
-  expat:
-    max_pin: x.x
   zlib:
     max_pin: x.x
 target_platform:
