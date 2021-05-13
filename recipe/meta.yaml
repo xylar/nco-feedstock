@@ -32,6 +32,7 @@ requirements:
     - krb5  # [not win]
     - udunits2
     - zlib
+    - openmp
     # need to list these twice to get version pinning from conda_build_config
     # and nompi build pinning
     - hdf5
@@ -46,6 +47,7 @@ requirements:
     - hdf5
     - krb5  # [not win]
     - libnetcdf
+    - openmp
     - udunits2
     - tempest-remap  # [not win]
 
