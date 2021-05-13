@@ -18,6 +18,8 @@ requirements:
     - cmake  # [win]
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - llvm-openmp  # [osx]
+    - libgomp      # [linux]
   host:
     - libblas
     - libcblas
