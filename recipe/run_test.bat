@@ -10,6 +10,6 @@ ncks -v erf_one foo.nc || exit 1
 
 ncks --tst_udunits="5 meters",centimeters in.nc || exit 1
 
-ncks -v "H2O$" $fin in.nc || exit 1
+ncks -v "H2O$" in.nc || exit 1
 
 ncks -r || exit 1
