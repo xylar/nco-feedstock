@@ -9,6 +9,8 @@ ncap2 -O -v -s 'erf_one=float(gsl_sf_erf(1.0f));print(erf_one,"%g")' $fin fooo.n
 
 ncks --tst_udunits='5 meters',centimeters $fin
 
+ncks -v 'H2O$' $fin
+
 ncks -r
 
 ncks -O --rgr skl=skl_t42.nc \
