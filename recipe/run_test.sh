@@ -3,9 +3,17 @@
 ncgen -o data/in.nc data/in.cdl
 fin=data/in.nc
 
-ncap2 -O -v -s 'erf_one=float(gsl_sf_erf(1.0f));print(erf_one,"%g")' $fin fooo.nc
-
 ncks -H --trd -v one $fin
+
+ncap2 -O -v -s 'erf_one=float(gsl_sf_erf(1.0f));print(erf_one,"%g")' $fin foo.nc
+
+ncks -O --thr_nbr=3 --rgr lat_nbr=2 --dbg=2 $fin foo.nc
+
+ncks --tst_udunits='5 meters',centimeters $fin
+
+ncks -v 'H2O$' $fin
+
+ncks -r
 
 ncks -O --rgr skl=skl_t42.nc \
         --rgr grid=grd_t42.nc \
