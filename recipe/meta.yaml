@@ -1,4 +1,4 @@
-{% set version = "4.9.9.beta04" %}
+{% set version = "5.0.0alpha02" %}
 {% set build = 0 %}
 
 package:
@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/nco/nco/archive/4.9.9-beta04.tar.gz
-  sha256: 4f525e37333b2dd3f7c8b7e359c7e405fb7bb641424218bf190bd76edaa8c115
+  url: https://github.com/nco/nco/archive/5.0.0-alpha02.tar.gz
+  sha256: 177c43f7afe203bef174d56e56791b2849fec692aaa11c93b3d10d5354537ed0
 
 build:
   number: {{ build }}
